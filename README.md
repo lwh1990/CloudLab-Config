@@ -1,7 +1,7 @@
 # CloudLab Configuration
 To ease the build!
 
-## Build Orangfs 
+## Build OrangFS 
 ```
 # server0
 ./hdd.sh
