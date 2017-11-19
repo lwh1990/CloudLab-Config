@@ -1,23 +1,23 @@
-#CloudLab Configuration
+# CloudLab Configuration
 To ease the build!
 
-##Build Orangfs 
+## Build Orangfs 
 ```
-#server0
+# server0
 ./hdd.sh
 ./buildorangefs.sh
 ```
 
-##Add I/O server 
+## Add I/O server 
 ```
-#serveri
+# serveri
 ./hdd.sh
 ./add addserver.sh i
 ```
 
-##Add compute node 
+## Add compute node 
 ```
-#nodei
+# nodei
 ./addclient.sh
 ./installbasic.sh
 ```
