@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install gfortran vim
+sudo apt-get install gfortran vim unzip
 
 
 # install mpich
