@@ -21,3 +21,10 @@ To ease the build!
 ./addclient.sh
 ./installbasic.sh
 ```
+## Add burst buffer node 
+```
+# nodei
+./ssd.sh
+./addclient.sh
+./installbasic.sh
+```
