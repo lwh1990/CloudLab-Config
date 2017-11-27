@@ -28,3 +28,14 @@ To ease the build!
 ./addclient.sh
 ./installbasic.sh
 ```
+
+## bb node build orangefs
+```
+# node4 server
+./buildorangefs-bb.sh
+# node5-7 server
+./addserver-bb.sh
+# node0-7 client
+./addclient-bb.sh
+```
+
