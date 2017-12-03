@@ -1,6 +1,14 @@
 # CloudLab Configuration
 To ease the build!
 
+## ssh config
+```
+cp id_rsa_s ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_rsa
+for((i=1;i<4;i++));do scp /users/lwh1990/.ssh/id_rsa server$i:/users/lwh1990/.ssh/  ;done
+for((i=0;i<4;i++));do scp /users/lwh1990/.ssh/id_rsa node$i:/users/lwh1990/.ssh/  ;done
+```
+
 ## Build OrangFS 
 ```
 # server0
