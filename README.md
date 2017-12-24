@@ -28,6 +28,7 @@ for((i=0;i<4;i++));do scp /users/lwh1990/.ssh/id_rsa node$i:/users/lwh1990/.ssh/
 # nodei
 ./addclient.sh
 ./installbasic.sh
+./installtest.sh (node0)
 ```
 ## Add burst buffer node 
 ```
