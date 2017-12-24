@@ -20,7 +20,7 @@ for((i=0;i<4;i++));do scp /users/lwh1990/.ssh/id_rsa node$i:/users/lwh1990/.ssh/
 ```
 # serveri
 ./hdd.sh
-./add addserver.sh i
+./addserver.sh i
 ```
 
 ## Add compute node 
