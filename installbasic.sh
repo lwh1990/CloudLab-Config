@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install gfortran vim unzip
+sudo apt-get install gfortran vim unzip htop
 
 
 # install mpich
