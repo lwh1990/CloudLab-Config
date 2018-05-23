@@ -1,11 +1,11 @@
 #!/bin/bash
-sudo apt install automake build-essential bison flex libattr1 libattr1-dev
+sudo apt install automake build-essential bison flex libattr1 libattr1-dev vim
 
 tar -xzvf orangefs-2.9.6.tar.gz
 
 cd orangefs-2.9.6
 
-./configure --prefix=/hdd/orangefs --with-kernel=/lib/modules/3.13.0-117-generic/build --with-db-backend=lmdb --enable-shared
+./configure --prefix=/hdd/orangefs --with-kernel=/lib/modules/3.13.0-143-generic/build --with-db-backend=lmdb --enable-shared
 
 make 
 
