@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo apt install automake build-essential bison flex libattr1 libattr1-dev vim
 
+./hdd.sh
+
 tar -xzvf orangefs-2.9.6.tar.gz
 
 cd orangefs-2.9.6

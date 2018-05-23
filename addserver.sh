@@ -1,5 +1,7 @@
 #!/bin/bash
 
+./hdd.sh
+
 scp -rp server0:/hdd/orangefs /hdd
 
 rm -rf /hdd/orangefs/storage

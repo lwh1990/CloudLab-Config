@@ -12,14 +12,12 @@ for((i=0;i<4;i++));do scp /users/lwh1990/.ssh/id_rsa node$i:/users/lwh1990/.ssh/
 ## Build OrangFS 
 ```
 # server0
-./hdd.sh
 ./buildorangefs.sh
 ```
 
 ## Add I/O server 
 ```
 # serveri
-./hdd.sh
 ./addserver.sh i
 ```
 
@@ -30,21 +28,12 @@ for((i=0;i<4;i++));do scp /users/lwh1990/.ssh/id_rsa node$i:/users/lwh1990/.ssh/
 ./installbasic.sh
 ./installtest.sh (node0)
 ```
-## Add burst buffer node 
+## Add burst buffer server
 ```
-# nodei
-./ssd.sh
-./addclient.sh
-./installbasic.sh
-```
-
-## bb node build orangefs
-```
-# node4 server
+#first bbserver
 ./buildorangefs-bb.sh
-# node5-7 server
+#other bbservers
 ./addserver-bb.sh
-# node0-7 client
+#add client
 ./addclient-bb.sh
 ```
-

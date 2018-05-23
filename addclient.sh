@@ -2,7 +2,7 @@
 
 sudo scp -rp server0:/hdd/orangefs /opt
 
-sudo insmod /opt/orangefs/lib/modules/3.13.0-117-generic/kernel/fs/pvfs2/pvfs2.ko
+sudo insmod /opt/orangefs/lib/modules/3.13.0-143-generic/kernel/fs/pvfs2/pvfs2.ko
 
 sudo cp /opt/orangefs/lib/* /usr/lib/
 
