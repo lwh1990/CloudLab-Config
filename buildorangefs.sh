@@ -7,7 +7,7 @@ tar -xzvf orangefs-2.9.6.tar.gz
 
 cd orangefs-2.9.6
 
-./configure --prefix=/hdd/orangefs --with-kernel=/lib/modules/4.15.0-23-generic/build --with-db-backend=lmdb --enable-shared
+./configure --prefix=/hdd/orangefs --with-kernel=/lib/modules/3.13.0-143-generic/build --with-db-backend=lmdb --enable-shared
 
 make 
 
