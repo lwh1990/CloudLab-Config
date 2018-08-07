@@ -32,11 +32,13 @@ link = pg.LAN("lan")
 #disk_image="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU16-64-STD"
 #disk_image="urn:publicid:IDN+apt.emulab.net+image+cloudincr-PG0:TTU-OpenHPC-CN"
 
+disk_image="urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD"
+
 # Storage Serve
 for i in range (params.n):
     node = pg.RawPC("server"+str(i))
     node.hardware_type = params.t
-    #node.disk_image=disk_image_lustre
+    node.disk_image=disk_image
     node.installRootKeys(True, True)
     #bs = node.Blockstore("bss"+str(i), "/mydata")
     #bs.size = "60GB"
@@ -53,7 +55,7 @@ for i in range (params.n):
 for i in range (params.m):
     node = pg.RawPC("node"+str(i))
     node.hardware_type = params.t
-    #node.disk_image=disk_image_cn
+    node.disk_image=disk_image
     node.installRootKeys(True, True)
     #bs = node.Blockstore("bsc"+str(i), "/mydata")
     #bs.size = "60GB"
